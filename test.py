@@ -10,5 +10,5 @@ class attackunit(unit) :
     unit.__init__(self, name, hp)
     self.damagfe = damage
     print("데미지는 : ", self.damage)
-    
+    print("살려줘 씹")
 wr1 = attackunit("레이스", 50, 40)
