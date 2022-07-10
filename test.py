@@ -11,4 +11,5 @@ class attackunit(unit) :
     self.damagfe = damage
     print("데미지는 : ", self.damage)
     print("살려줘 씹")
+    print("second_commit")
 wr1 = attackunit("레이스", 50, 40)
