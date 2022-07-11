@@ -6,6 +6,8 @@ url = "https://search.shopping.naver.com/search/all?query=%ED%8C%8C%EB%A7%88%EC%
 res = requests.get(url, headers = headers)
 soup = BeautifulSoup(res.text, "lxml")
 print("commit")
+
+ㄴㄴㄴㄴㄴㄴ
 items = soup.find_all("a", attrs={"target" :"_blank"})
 print(items)
 print(type(items))
