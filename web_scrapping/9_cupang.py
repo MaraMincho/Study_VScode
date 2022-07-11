@@ -5,7 +5,7 @@ headers = {'User-Agent' : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleW
 url = "https://search.shopping.naver.com/search/all?query=%ED%8C%8C%EB%A7%88%EC%82%B0%20%EC%B9%98%EC%A6%88%EA%B0%80%EB%A3%A8&cat_id=&frm=NVSHATC"
 res = requests.get(url, headers = headers)
 soup = BeautifulSoup(res.text, "lxml")
-
+print("commit")
 items = soup.find_all("a", attrs={"target" :"_blank"})
 print(items)
 print(type(items))
